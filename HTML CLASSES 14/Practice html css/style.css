@@ -8,6 +8,12 @@
 }
 .myheading{
     background-image: url(/images/women\ flower.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-block-start-style: dashed;
+    border-top-right-radius: 20vh;
+    border-bottom-left-radius: 20vh;
+    
     color: red;
     text-align: center;
     font-size: 40px;

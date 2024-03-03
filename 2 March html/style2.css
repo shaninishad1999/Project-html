@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    font-weight: 900;
+    font-style: oblique;
+    font-variant: small-caps;
+
+    font-stretch: expanded;
+    font-variant: initial;
+    font-feature-settings: "blwf";
+    font-variant-ligatures: historical-ligatures;
+    font-variant-numeric: ordinal;
+    font-variation-settings: red;
+    font-kerning: inherit;
+    font-language-override: unset;
+    font-language-override: calc(4);
+    font-language-override: initial;
+    text-transform: capitalize;
+    text-overflow: clip;
+    text-shadow: 50%;
+    text-rendering: geometricPrecision;
+    text-indent: 20cm;
+    text-decoration-line: underline;
+    text-size-adjust: 0vh;
+    text-wrap: calc(0 1 2 3);
+    text-decoration-skip: calc();
+    text-anchor: middle;
+    text-justify: kashida;
+    text-emphasis: initial;
+
+
+
+}
+div h3{
+    border: 4px solid red;
+    width: 40%;
+    /* height: 100vh; */
+    font-style: inherit;
+    font-style: italic;
+    font-display: bold;
+    font-variant: small-caps;
+    font-feature-settings: "abvm";
+    font-stretch: expanded;
+    font-variant-ligatures: contextual;
+    font-variant-numeric: lining-nums;
+    margin:40px 40px ;
+    padding: 40px 20px;
+    font-palette: ;
+    -moz-font-feature-settings: "dlig";
+
+}
+h2{
+    margin: 20px;
+    padding: 20px 20px;
+    border: 4px;
+    border-style: dotted;
+    border-color: chartreuse;
+    border-spacing: 20cm;
+    overscroll-behavior-x: 20;
+    border-block: ;
+    mask-border-repeat: 20px ;
+    background-clip: padding-box;
+    backdrop-filter: ;
+
+
+}
