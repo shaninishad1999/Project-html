@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        nav{
+            display: flex;
+            height: 70px;
+            background-color: #333;
+            color: white;
+            justify-content: space-between;
+        }
+        nav h1{
+            margin-left: 20px;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        li{
+            list-style: none;
+            padding: 10px 20px;
+        }
+        ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        ul li a:hover{
+            color: red;
+            border-bottom: 4px solid green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
