@@ -1,0 +1,59 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* position property */
+.container{
+    background-color: red;
+    border: 4px solid green;
+    height: 200px;
+    height: 2000px;
+    display: flex;
+    /* if parent me postion  absolute kr de to  */
+    /* position: absolute; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: aqua;
+    /* relative perpoty  we can use top bottom left right */
+   /* container ke according change position  */
+    position: relative;
+    /* top: 50px;
+    left: 100px; */
+    top: 50px;
+    left: 100px;
+    z-index: 3;
+} 
+.box2{
+    background-color: black;
+    color: white;
+    /* page ke top se postion change karega */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+}
+.box3{
+    background-color: yellow;
+    /* page ke top se fixed hoga */
+    position: fixed;
+
+    /* top: 0; */
+    
+}
+.box4{
+    background-color: orange;
+    /* sticky is take container */
+    position: sticky;
+    top: 0;
+
+}
+/* .hero2 {
+    border: 3px solid blueviolet;
+    height: 1000px;
+} */
