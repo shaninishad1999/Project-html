@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* sudo selector */
+li:first-child{
+    background-color: aqua;
+    font-size: 20px;
+}
+li:last-child{
+    background-color: blue;
+    font-size: 20px;
+}
+li:nth-child(5){
+    background-color: rebeccapurple;
+    font-size: 30px;
+}
+/* every 3rd child */
+li:nth-child(5n){
+    background-color: brown;
+}
+li:nth-child(odd){
+    background-color: azure;
+}
+li:nth-child(even){
+    background-color: rgb(34, 232, 232);
+}
+
+
+/* div +p{
+    background: yellow;
+} */
+div~p{
+    background-color: palegoldenrod;
+}

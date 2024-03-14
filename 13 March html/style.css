@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+}
+.item{
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+
+}
+@media screen and (max-width: 768px) {
+    .grid{
+        grid-template-columns: auto auto;
+    }
+    
+}
+@media screen and (max-width: 500px){
+
+}
+    
