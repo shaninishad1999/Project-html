@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.item img{
+    width: 200px;
+    height: 250px;
+
+}
+@media screen and (max-width:700) {
+    .grid{
+        grid-template-columns:   auto auto auto auto;
+       ;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .grid{
+        grid-template-columns: auto auto;
+    }
+}
+
+
+li:nth-child(2){
+    background-color: red;
+}
+li:first-child{
+    background-color: aqua;
+    font-size: 40px;
+}
+li:last-child{
+    background-color: gold;
+    font-size: 48px;
+}
+li:nth-child(3n){
+    background-color: blue;
+}
