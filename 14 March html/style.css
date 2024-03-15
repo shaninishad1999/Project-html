@@ -51,6 +51,24 @@ nav{
     background: url(/birds.jpg) no-repeat center center/cover;
     height: 100vh;
 }
+/* before */
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(255, 0, 10, 0.5); 
+
+}
+/* after */
+.hero::after{
+    color: rgb(60, 0, 255);
+}
+.hero *{
+    z-index: 10;
+}
 .content{
     display: flex;
     flex-direction: column;
