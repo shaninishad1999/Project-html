@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: shanideval;position: relative;
+    /* animation-duration: 5s; */
+    /* animation-iteration-count: 2; */
+    /* animation-timing-function: ease-in-out;
+    animation-delay: 2s; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    /* animation-fill-mode: both; */
+    animation: shanideval 5s 2 ease-in-out 5s;
+    border-radius: 50%;
+}
+/* @keyframes shanideval {
+    from{
+        width: 100px;
+        background-color: gold;
+    }
+    to{
+        width: 600px;
+    }
+} */
+
+/* @keyframes shanideval {
+    from{
+        width: 100px;
+        background-color: gold;
+    }
+    to{
+        width: 600px;
+    }
+} */
+@keyframes shanideval {
+    0%{
+        top: 0px;
+        left: 200px;
+        background-color: blue;
+    }
+    25%{
+        top: 200px;
+        left: 200px;
+        background-color: rgb(0, 255, 68);
+    }
+    50%{
+        top: 200px;
+        left: 0px;
+        background-color: rgb(0, 200, 255);
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: rgb(140, 255, 0);
+    }
+
+    
+}

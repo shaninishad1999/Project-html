@@ -30,9 +30,9 @@ transition: all 3s ease ;
     /* transform: translate(200px, 200px); */
     /* transform: scaleX(20); */
     /* transform: scaleY(20); */
-    /* transform: scale(5,10); */
+    transform: scale(2,2);
     /* transform: rotate(-3600deg); */
     /* transform: skewX(100deg);
     transform: skewY(100deg); */
-    transform: skew(200deg, 300deg);
+    /* transform: skew(200deg, 300deg); */
 }
