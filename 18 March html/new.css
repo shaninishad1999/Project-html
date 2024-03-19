@@ -29,4 +29,32 @@
 }
 .navbar label{
     margin-right: 30px;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        width:100% ;
+        background-color: #333;
+        text-align: center;
+        display: none;
+
+    }
+    .navbar ul li a{
+        color: red;
+    }
+    #click:checked ~ .navbar ul{
+        display: block;
+    }
+
+    
 }

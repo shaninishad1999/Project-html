@@ -1,0 +1,28 @@
+.grid{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    justify-content:center ;
+    align-items: center;
+    margin: auto;
+    grid-gap: 20px;
+}
+.grid img{
+    width: 200px;
+    height: 200px;
+}
+@media screen and (min-width:500px) {
+    body{
+        background-color: aqua;
+    }
+    
+}
+
+@media screen and (min-width:800px) {
+    body{
+        background-color: rgb(64, 0, 255);
+    }
+    
+}
+
+
+
