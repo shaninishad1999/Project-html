@@ -27,12 +27,12 @@
 .box1-image-element{
     position: absolute;
     top: 150px;
-    margin-left: -15000px;
+    
     color: white;
     
 }
 .box1-image-element h2{
-    padding-left: 400px;
+    padding-left: 50px;
     font-size: 30px;
     color: orange;
     margin-right: -1500px;
