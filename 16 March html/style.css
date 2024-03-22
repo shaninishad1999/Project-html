@@ -21,7 +21,7 @@
     animation: shanideval 5s 2 ease-in-out 5s;
     border-radius: 50%;
 }
-/* @keyframes shanideval {
+@keyframes shanideval {
     from{
         width: 100px;
         background-color: gold;
@@ -29,9 +29,9 @@
     to{
         width: 600px;
     }
-} */
+}
 
-/* @keyframes shanideval {
+@keyframes shanideval {
     from{
         width: 100px;
         background-color: gold;
@@ -39,7 +39,7 @@
     to{
         width: 600px;
     }
-} */
+}
 @keyframes shanideval {
     0%{
         top: 0px;
