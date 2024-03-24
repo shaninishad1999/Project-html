@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    color: white;   
+    background-color: black;
+    height: 80px;
+    padding-top: 30px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+    padding: 10px;
+
+}
+
+#click{
+    display: none;
+}
+
+.navbar label {
+    display: none;   
+}
+
+
+
+
+.navbar ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    z-index: 0;
+    background: rgb(7, 7, 241);
+    
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.navbar ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+   
+}
+
+@media screen and (max-width:500px) {
+    .navbar label {
+    display: block;
+}
+
+#click:checked ~ .navbar ul{
+    display: block;
+}
+.navbar ul{
+    display: none;
+    top: 100px;
+    position: absolute;
+    color: aqua;
+    width: 100%;
+    background-color: black;
+}
+
+
+} 
+
+
