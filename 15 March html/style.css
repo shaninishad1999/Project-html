@@ -24,13 +24,13 @@ transition: all 3s ease ;
     /* width: 400px; */
     height: 100px;
     background-color: rgb(136, 255, 0);
+    transform: scale(2,2);
     /* transform */
     /* transform: translateX(200px);
     transform: translateY(200px); */
     /* transform: translate(200px, 200px); */
     /* transform: scaleX(20); */
     /* transform: scaleY(20); */
-    transform: scale(2,2);
     /* transform: rotate(-3600deg); */
     /* transform: skewX(100deg);
     transform: skewY(100deg); */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hamburger {
+  z-index: 1;
+}
+
+.hamburger-container .checkbox {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+.hamburger-container .checkbox:focus ~ .hamburger {
+  /* Not all browsers support outline: auto, so set a sensible fallback outline. */
+  outline: 2px solid white;
+  outline: auto;
+  outline-offset: 4px;
+}
+
+/* For newer browsers that do support :focus-visible, hide the outline when the checkbox is not selected with the keyboard. */
+@supports selector(:focus-visible) {
+  .hamburger-container .checkbox:not(:focus-visible) ~ .hamburger {
+    outline: none;
+  }
+}
+.drawer {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.hamburger-container .checkbox:checked ~ .drawer {
+  transform: translateX(0%);
+}
+.hamburger-container .drawer a {
+  visibility: hidden;
+  transition: visibility 0.5s linear;
+}
+
+.hamburger-container .checkbox:checked ~ .drawer a {
+  visibility: visible;
+}
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-container .checkbox:checked ~ .hamburger .slice:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+.hamburger-container .checkbox {
+  transition: transform 0.5s ease;
+}
+
+.hamburger .slice {
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  .drawer {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="hamburger-container">
+        <input class="checkbox" type="checkbox" id="hamburger-toggle" aria-label="Toggle Navigation"/>
+        <label class="hamburger" for="hamburger-toggle">
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+        </label>
+        <div class="drawer">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="#">Home</a></li>
+            <li class="nav-list-item"><a href="#">About</a></li>
+            <li class="nav-list-item"><a href="#">Contact Us</a></li>
+         </ul>
+       </div>
+      </div>
+</body>
+</html>

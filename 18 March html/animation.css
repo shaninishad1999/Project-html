@@ -1,0 +1,100 @@
+body{
+    padding: 50px;
+    margin: 0;
+}
+.container{
+    width: 200px;
+    padding: 20px;
+    border: 10px solid #ddd;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 15px 25px rgba(0,0,0, 0.3);
+}
+
+img{
+    width: 100%;
+}
+.item{
+    width: 100%;
+    display: flex;
+    animation: slide 5s infinite linear;
+}
+@keyframes slide {
+    0%{transform: translateX(0);}
+    25%{transform: translateX(0);}
+    30%{transform: translateX(-100%);}
+    50%{transform: translateX(-100%);}
+    55%{transform: translateX(-200%);}
+    75%{transform: translateX(-200%);}
+    80%{transform: translateX(-300%);}
+    100%{transform: translateX(-300%);}
+    
+}
+.box{
+    max-width:  600px;
+    background-color: aqua;
+    height: 200px;
+
+}
+
+
+.boxex{
+   
+    animation: shani 3s infinite linear;
+    /* animation: animated 6s linear infinite; */
+    width: 100%;
+    display: flex;
+}
+@keyframes shani {
+    0%{transform: translateX(0);}
+    25%{transform: translateX(0);}
+    30%{transform: translateX(-100%);}
+    50%{transform: translateX(-100%);}
+    55%{transform: translateX(-200%);}
+    75%{transform: translateX(-200%);}
+    80%{transform: translateX(-300%);}
+    100%{transform: translateX(-300%);}
+    
+
+    
+}
+body{
+    background-color: #ddd;
+}
+.animated-text{
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+    color: red;
+    -webkit-text-stroke: 0.3w blue;
+    text-transform: uppercase;
+
+}
+h2::before{
+    content: attr(animated-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    color: chartreuse;
+    -webkit-text-stroke: 0.3w blue;
+    border-right: 2px solid gold;
+    overflow: hidden;
+    animation: animated 6s linear infinite;
+
+}
+@keyframes animated{
+    0%,10% ,100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+
+
+
+
+

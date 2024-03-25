@@ -13,6 +13,86 @@
     color: red;
 } */
 
+/* #click{
+    display: none;
+}
+.navbar label{
+    display: none;
+    padding-right: 30px;
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+@media screen and (max-width:500px) {
+
+.navbar label{
+    display: block;
+
+}
+.navbar ul{
+    
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    width:100% ;
+    background-color: #333;
+    text-align: center;
+    display: none;
+
+}
+
+#click:checked ~ .navbar ul{
+    display: block;
+}
+    
+}
+
+
+ */
+
+ .navbar label{
+    margin-right: 30px;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        width:100% ;
+        background-color: #333;
+        text-align: center;
+        display: none;
+
+    }
+    .navbar ul li a{
+        color: red;
+    }
+    #click:checked ~ .navbar ul{
+        display: block;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 nav{
     background-color: black;
     display: flex;
@@ -20,6 +100,7 @@ nav{
     height: 80px;
     color: white;
 }
+
 .navbar ul{
     display: flex;
     list-style: none;
@@ -59,7 +140,7 @@ nav{
     left: 0;
    height: 100%;
    width: 100%;
-   background-color: rgba(255, 0, 10, 0.5); 
+   /* background-color: rgba(255, 0, 10, 0.5);  */
 
 }
 /* after */

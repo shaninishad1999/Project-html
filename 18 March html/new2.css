@@ -1,0 +1,111 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+   
+}
+
+#click {
+    display: none;
+}
+
+.navbar label{
+    display: none;
+}
+
+
+/* transition  */
+.navbar ul li a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: red ;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: transform 0.4s linear ;
+}
+
+.navbar ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.container{
+    width: 200px;
+    padding: 20px;
+    border: 10px solid #ddd;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 15px 25px rgba(0,0,0, 0.3);
+}
+
+img{
+    width: 100%;
+}
+.item{
+    width: 100%;
+    display: flex;
+
+    animation: slide 10s infinite linear;
+}
+@keyframes slide {
+    0%{transform: translateX(0);}
+    25%{transform: translateX(0);}
+    30%{transform: translateX(-100);}
+    50%{transform: translateX(-100);}
+    55%{transform: translateX(-200);}
+    75%{transform: translateX(-200);}
+    80%{transform: translateX(-300);}
+    100%{transform: translateX(-300);}
+    
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .navbar .click {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background-color: blue;
+     
+    }
+    .navbar ul li a{
+        color: white;
+    }
+
+    #click:checked ~ .navbar ul {
+        display: flex;
+    }
+
+
+ 
+
+   
+}
