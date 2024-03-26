@@ -19,6 +19,13 @@ img{
     display: flex;
     animation: slide 5s infinite linear;
 }
+.item2 h1{
+    position: relative;
+    
+   
+    overflow: visible;
+
+}
 @keyframes slide {
     0%{transform: translateX(0);}
     25%{transform: translateX(0);}
